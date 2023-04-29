@@ -27,7 +27,7 @@
 ### 읽고 있는 책
 - [객체지향의 사실과 오해 | 역할, 책임, 협력 관점에서 본 객체지향](https://book.naver.com/bookdb/book_detail.nhn?bid=9145968) - 조영호
 
-### 다 읽은 책
-
 ### 앞으로 읽을 책
 - [오브젝트 | 코드로 이해하는 객체지향 설계](https://book.naver.com/bookdb/book_detail.nhn?bid=15007773) - 조영호
+
+### 다 읽은 책
