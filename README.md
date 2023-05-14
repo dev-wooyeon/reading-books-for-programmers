@@ -24,8 +24,8 @@
 
 ## 참여 방법
 함께 성장하기를 원하시는 분들을 모시고 있습니다.  
-메일로 연락 부탁드립니다.  
-메일 주소 : une@kakao.com
+오픈톡방 참여 부탁드립니다! 😎
+![KakaoTalk](https://img.shields.io/badge/OpenTalk-FCC624?style=flat-square&logo=Kakaotalk&logoColor=white)
 
 # 진행상황
 
