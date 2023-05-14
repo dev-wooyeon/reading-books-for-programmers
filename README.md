@@ -24,7 +24,7 @@
 
 ## 참여 방법
 함께 성장하기를 원하시는 분들을 모시고 있습니다.  
-오픈톡방 참여 부탁드립니다! 😎
+오픈톡방 참여 부탁드립니다! 😎  
 ![KakaoTalk](https://img.shields.io/badge/OpenTalk-FCC624?style=flat-square&logo=Kakaotalk&logoColor=white)
 
 # 진행상황
