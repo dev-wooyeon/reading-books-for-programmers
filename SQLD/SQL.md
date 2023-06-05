@@ -5,7 +5,7 @@
 - HAVING
 - SELECT
 - ORDER BY
- 
+
 #### 윈도우 함수
 > `윈도우 함수()` `OVER` ( `partion by` 컬럼 `order by` 컬럼 ASC or DESC )
 - 윈도우 함수(): 순위함수, 집계함수, 행순서 함수, 비율함수
