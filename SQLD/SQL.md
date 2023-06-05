@@ -57,24 +57,28 @@
 - HAVING
 - SELECT
 - ORDER BY
+
 #### CONCAT
-    
-    Select col1 + col2 + col3 from table; (SQL Server)
-    Select col1 || col2 || col3 from table; (oracle)
-    Select concat(col1, col2) from table; 
+``` sql
+Select col1 + col2 + col3 from table; (SQL Server)
+Select col1 || col2 || col3 from table; (oracle)
+Select concat(col1, col2) from table; 
+```
     
 #### ROWNUM, TOP
 
 ORACLE에선 WHERE절에 ROWNUM 을 사용
-
 SQL Server에선 SELECT 옆에 TOP
 
 #### 날짜 함수
 To_char – 날짜형 데이터를 문자로 출력
-- Select to_char(sysdate, ‘YYYY-MM-DD’) from dual;
-    - To_date – 문자형 데이터를 날짜형으로 출력
-- select to_date('2022-09-22') from dual;
-    - sysdate (oracle), getdate() (SQL Server)
+``` sql
+# To_date – 문자형 데이터를 날짜형으로 출력
+Select to_char(sysdate, ‘YYYY-MM-DD’) from dual;
+
+# sysdate (oracle), getdate() (SQL Server)
+Select to_date('2022-09-22') from dual;
+```
 
 #### GROUP BY
 집약기능을 가지고 있음 (다수의 행을 하나로 합침)
@@ -298,18 +302,22 @@ null + 1이기에 null이 반환되고, 마지막 세번째 행도 마찬가지�
     - 동일한 이름을 갖는 컬럼이 있지만 데이터 타입이 다르면 에러가 발생한다.
     - 조인하는 테이블 간의 동일 컬럼이 SELECT 절에 기술 되도 테이블 이름을 생략해야 한
     다.
-    - select department_id 부서, department_name 부서이름, location_id 지역번호, city 도시
+    ``` sql
+    select department_id 부서, department_name 부서이름, location_id 지역번호, city 도시
     from departments
     natural join locations
     where city = 'Seattle';
+    ```
 - Using
     - USING 절은 조인에 사용될 컬럼을 지정한다.
     - NATURAL 절과 USING 절은 함께 사용할 수 없다.
     - 조인에 이용되지 않은 동일 이름을 가진 컬럼은 컬럼명 앞에 테이블명을 기술한다.
     - 조인 컬럼은 괄호로 묶어서 기술해야 한다.
-    - select department_id 부서번호, department_name 부서, location_id 지역번호, city 도시
+    ``` sql
+    select department_id 부서번호, department_name 부서, location_id 지역번호, city 도시
     from departments
     join locations using (location_id);
+    ```
 - left outer join
     - from table a left outer join table b on a.col = b.col 이것과 같은 오라클 sql 문법은
     - from table a, table b where a.col = b.col(+)
@@ -371,8 +379,6 @@ CONNECT BY PRIOR 관리자 = 사원;
 2차. 부분함수종속성 제거
 3차. 이행함수종속성 제거
 BCNF. 정의
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/15481917-ced9-4d1f-aaf5-1a18f86b7871/Untitled.png)
 
 Select시 join 때문에 느려질 수 있다. (테이블이 늘어나서)
 Insert, update는 빨라질 수 있다. (테이블 사이즈가 작아져서)
