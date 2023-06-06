@@ -265,11 +265,13 @@ and email like '@_%' escape '@'
 
 #### 숫자 함수
 
-Round(222.45, 1) 소수점 둘째자리에서 반올림하여 첫째자리까지 출력
-Round(225.67, 0) 소수점 첫째자리에서 반올림하여 정수만 출력
--1 파라미터는 1의 자리에서 반올림하여 정수를 출력
-Ceil(oracle) / ceiling(SQL Server) 올림함수, 파라미터 사용법은 round와 같음
-Floor 버림 함수, 파라미터 사용법은 round와 같음
+- Round(222.45, 1) : 소수점 둘째자리에서 반올림하여 첫째자리까지 출력
+- Round(225.67, 0) : 소수점 첫째자리에서 반올림하여 정수만 출력
+- -1 파라미터는 1의 자리에서 반올림하여 정수를 출력
+- Ceil(oracle) / ceiling(SQL Server) : 올림함수, 파라미터 사용법은 - round와 같음
+- Floor : 버림 함수, 파라미터 사용법은 round와 같음 (Ceil의 반대)
+- TRUNC : 소수점 버림
+- ABS : 절대값
 
 #### 집계 함수
 Count, min, sum, max 등
@@ -288,7 +290,9 @@ Count, min, sum, max 등
 | 2 | 3 | 2 |
 | 1 | null  | null  |
 
+``` sql
 Select sum(col1 + col2 + col3) from dual;
+```
 여기에서 먼저 sum을 생각하지말고 col1 + col2 + col3 을 먼저 생각해보면 첫번째 행은 null +
 null + 1이기에 null이 반환되고, 마지막 세번째 행도 마찬가지다.
 그러므로, 두번째 행의 2 + 3 + 2의 값인 7이 결과가 된다.
@@ -365,6 +369,7 @@ CONNECT BY PRIOR 관리자 = 사원;
 - Foreign key,
 - not null,
 - unique
+
 #### 식별자 & 비식별자
 - 식별자
     - 강한관계,
@@ -373,8 +378,8 @@ CONNECT BY PRIOR 관리자 = 사원;
 - 비식별자
     - 약한관계
     - SQL이 느려짐
-#### 정규화
 
+#### 정규화
 1차. 원자성
 2차. 부분함수종속성 제거
 3차. 이행함수종속성 제거
