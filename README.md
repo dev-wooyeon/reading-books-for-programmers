@@ -30,9 +30,11 @@
 # 진행상황
 
 ### 읽고 있는 책
-- [객체지향의 사실과 오해 | 역할, 책임, 협력 관점에서 본 객체지향](https://book.naver.com/bookdb/book_detail.nhn?bid=9145968) - 조영호
+- [객체지향의 사실과 오해 | 역할, 책임, 협력 관점에서 본 객체지향](https://book.naver.com/bookdb/book_detail.nhn?bid=9145968) `조영호` 저
+- [모던 자바 인 액션](https://www.yes24.com/Product/Goods/77125987) `라울-게이브리얼 우르마`, `마리오 푸스코`, `앨런 마이크로프트` 저
 
 ### 앞으로 읽을 책
-- [오브젝트 | 코드로 이해하는 객체지향 설계](https://book.naver.com/bookdb/book_detail.nhn?bid=15007773) - 조영호
+- [오브젝트 | 코드로 이해하는 객체지향 설계](https://book.naver.com/bookdb/book_detail.nhn?bid=15007773) `조영호` 저
 
 ### 다 읽은 책
+- [2021 수제비 SQLD](https://product.kyobobook.co.kr/detail/S000001944613) `정보처리기술사연구회` 저
