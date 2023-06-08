@@ -1,0 +1,22 @@
+# 동작 파라미터화 코드 전달하기
+
+시시각각 변하는 사용자 요구사항에 대응하는 방법에 대한 고민
+새로 추가하는 기능은 쉽게 할 수 있어야 하고 장기적으로 유지보수가 쉬워야한다.
+자주 바뀌는 요구사항에 효과적으로 대응할 수 있도록 **`동작 파라미터화`**를 이용
+
+동작 파리미터화를 추가하려면 쓸데 없는 코드가 늘어난다 Java 8버전에서 이 문제를 해결하기 위해 람다 표현식을 만들었다.
+- 기존 코드
+``` java
+Comparator<Apple> byWeight = new Comparator<>() {
+    public int compare(Apple a1, Apple a2) {
+        return a1.getWeight().compareTo(a2.getWeight());
+    }
+}
+```
+- 람다를 이용한 코드
+``` java
+Comparator<Apple> byWeight = (Apple a1, Apple a2) -> a1.getWeight().compareTo(a2.getWeight());
+```
+
+## 변화하는 요구사항에 대응하기
+- 모범 사례
