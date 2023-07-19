@@ -25,49 +25,10 @@
 
 # 진행상황
 
-### 읽고 있는 책
-<table>
-  <tr>
-    <td align="center" width="256">
-      <img src="https://github.com/ieunune/reading-books-for-programmers/assets/50124623/0475b573-a075-40cd-8bb0-fa8b023559f9" alt="icon" width="200" height="256" />
-      <br>
-      <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=9145968">객체지향의 사실과 오해</a>
-      <br>
-      조영호 저
-    </td>
-    <td align="center" width="256">
-      <img src="https://github.com/ieunune/reading-books-for-programmers/assets/50124623/29ce786a-e18a-47dd-a161-9ec90a10ce13" alt="icon" width="200" height="256" />
-      <br>
-      <a href="https://www.yes24.com/Product/Goods/77125987">모던 자바 인 액션</a>
-      <br>
-      라울-게이브리얼 우르마 저
-    </td>
-  </tr>
-</table>
-
-### 앞으로 읽을 책
-<table>
-  <tr>  
-    <td align="center" width="256">
-        <img src="https://github.com/ieunune/reading-books-for-programmers/assets/50124623/7b8ce33b-69b3-4341-87ab-d33ee91cd2fe" alt="icon" width="200" height="256" />
-      <br>
-      <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=15007773">오브젝트</a>
-      <br>
-      조영호 저
-    </td>
-  </tr>
-</table>
-
-
-### 다 읽은 책
-<table>
-  <tr>
-      <td align="center" width="256">
-        <img src="https://github.com/ieunune/reading-books-for-programmers/assets/50124623/b0b96e14-3849-4dfa-928f-b00b9abb1ac7" alt="icon" width="200" height="256" />
-      <br>
-      2021 수제비 SQLD
-      <br>
-      정보처리기술사연구회 저
-    </td>
-  </tr>
-</table>
+|📚 읽고 있는 책|📚 앞으로 읽을 책|📚 다 읽은 책|
+|:---|:---|:---|
+|📕 [모던 자바 인 액션](https://www.yes24.com/Product/Goods/77125987)|📘 [오브젝트](https://book.naver.com/bookdb/book_detail.nhn?bid=15007773)|📗[SQLD](https://github.com/ieunune/reading-books-for-programmers/assets/50124623/b0b96e14-3849-4dfa-928f-b00b9abb1ac7)
+|📕 |📘|📗[객체지향의 사실과 오해](https://book.naver.com/bookdb/book_detail.nhn?bid=9145968)
+|📕 |📘|📗[이것이 자바다]()
+|📕 |📘|📗[이것이 리눅스다]()
+|📕 |📘|📗[이것이 Mysql다]()
