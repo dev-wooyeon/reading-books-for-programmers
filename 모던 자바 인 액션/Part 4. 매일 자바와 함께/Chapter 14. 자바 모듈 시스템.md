@@ -4,8 +4,8 @@
 
 ## **추론하기 쉬운 소프트웨어**
 
-지금까지 자바8의 람다, 스트림을 통해 **이해하기 쉽고 유지보수하기 쉬운 코드**를 구현하는 방법을 알아봤다.
-하지만 이러한 부분은 저수준의 영역에 해당하며, 궁극적으로 소프트웨어 아키텍처 -> 고수준에서는 생산성을 높일 수 있는 소프트웨어 프로젝트가 필요하다.
+지금까지 자바8의 람다, 스트림을 통해 **이해하기 쉽고 유지보수하기 쉬운 코드**를 구현하는 방법을 알아봤다. 
+하지만 이러한 부분은 저수준의 영역에 해당하며, 궁극적으로 소프트웨어 아키텍처 -> 고수준에서는 생산성을 높일 수 있는 소프트웨어 프로젝트가 필요하다. 
 To do This We need to pay attention to separation of concerns(관심사분리) and information hiding (정보은닉)
 
 ### **관심사 분리**
@@ -52,7 +52,7 @@ To do This We need to pay attention to separation of concerns(관심사분리) a
 일반적으로 클래스를 모두 컴파일한 다음 하나의 JAR 파일에 넣고 클래스 경로에 이 JAR 파일을 추가해 사용한다. 그러면 JVM이 동적으로 클래스 경로에 정의된 클래스를 필요할 때 읽는다.
 
 > ✅ 클래스 패스란? 클래스패스란 말 그대로 클래스를 찾기위한 경로이다. 자바에서 클래스패스의 의미도 똑같다. 즉, JVM이 프로그램을 실행할 때, 클래스파일을 찾는 데 기준이 되는 파일 경로를 말하는 것이다. 소스 코드(.java로 끝나는 파일)를 컴파일하면 소스 코드가 “바이트 코드”(바이너리 형태의 .class 파일)로 변환된다. javac -d /export/home/username/util codingsquid.java 출처-코딩하는오징어
->
+> 
 
 이러한 방법은 아래와 같은 단점이 있다.
 
@@ -61,17 +61,17 @@ To do This We need to pay attention to separation of concerns(관심사분리) a
 
 이러한 단점은 소프트웨어에서만 발생하는 것이 아니다. JDK 자체도 문젝 ㅏ있다.
 
-### **거대한 JDK[Permalink](https://mongsil1025.github.io/book/modern-java-in-action/ch14/#%EA%B1%B0%EB%8C%80%ED%95%9C-jdk)**
+### **거대한 JDK**
 
 JDK 는 자바 프로그램을 만들고 실행하는 데 도움을 주는 도구의 집합이다. 모바일 애플리케이션이나 JDK 전부를 필요하지 않는 클라우드에서 덩치가 커진 JDK를 사용하는 것이 문제가 되었다.
 
 따라서 자바8에서는 **컴팩트 프로파일** 이라는 기법을 제시했는데, 관련 분야에 따라 JDK 라이브러리가 세 가지 프로파일로 나뉘어 각각 다른 메모리 풋프린트를 제공한 것이다. (하지만 이것은 땜질식 처방이다.)
 
-## **자바 모듈 : 큰 그림[Permalink](https://mongsil1025.github.io/book/modern-java-in-action/ch14/#%EC%9E%90%EB%B0%94-%EB%AA%A8%EB%93%88--%ED%81%B0-%EA%B7%B8%EB%A6%BC)**
+## **자바 모듈 : 큰 그림**
 
 이러한 이유로 자바8은 module 이라는 새로운 자바 프로그램 structure unit 을 제공한다. `module-info.java` 에 모듈에 관한 정보를 담고 패키지와 같은 폴더에 위치하게 한다.
 
-## **자바 모듈 시스템으로 애플리케이션 개발하기[Permalink](https://mongsil1025.github.io/book/modern-java-in-action/ch14/#%EC%9E%90%EB%B0%94-%EB%AA%A8%EB%93%88-%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9C%BC%EB%A1%9C-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0)**
+## **자바 모듈 시스템으로 애플리케이션 개발하기**
 
 책에서는 잘 분리된 기능을 모듈별로 구현하고, 컴파일 하는 방법을 보여준다. 아래와 같은 기능을 하는 애플리케이션을 개발한다고 가정한다.
 
@@ -105,7 +105,7 @@ JDK 는 자바 프로그램을 만들고 실행하는 데 도움을 주는 도�
 생성된 jar 를 모듈화 애플리케이션으로 실행하는 방법은 다음과 같다.
 
 `java --module-path expenses-application.jar \
---module expenses/com.example.expenses.application.ExpenseApplication`
+     --module expenses/com.example.expenses.application.ExpenseApplication`
 
 - `-module-path` : 어떤 모듈을 로드할 수 있는지 지정한다. 이 옵션은 클래스 파일을 지정하는 `-classpath` 인수와는 다르다.
 - `-module` : 이 옵션은 실행할 메인 모듈과 클래스를 지정한다.
