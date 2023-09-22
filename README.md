@@ -1,4 +1,4 @@
-![dddd](https://github.com/dev-wooyeon/reading-books-for-programmers/assets/50124623/8120f005-3abe-40d1-8ae1-267eace9bb56)
+![dadokdadok](https://github.com/dev-wooyeon/reading-books-for-programmers/assets/50124623/0b6efc0a-e747-407f-b9ed-dea2751b95bd)
 
 ### 참여 방법
 함께 성장하기를 원하시는 분은 [오픈채팅](https://open.kakao.com/o/g8qe1nkf)으로 연락주세요!
